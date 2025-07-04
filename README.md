@@ -11,6 +11,39 @@ This also contains files that can be used when using headphones and regular spea
 
 IRS files are also provided, to be used with the convolver.
 
+## Requirements:
+requires easyeffects and pipewire properly configured. be sure that pipewire.conf, client.conf and pipewire-pulse.conf have the right quantum, and match the samplerate that windows uses for your audio card. 
+
+Boot into windows, and look for the following settings:
+
+![samplerate2](https://github.com/user-attachments/assets/3fe228f1-acce-48e2-b9b8-bb1af2d2610c)
+![samplerate](https://github.com/user-attachments/assets/06f1acdc-3a5a-44fd-b4b6-8d7153cb5578)
+
+In my case, my audio card only supports 48KHz, 16 bit samplerate. 
+
+So, you may configure pipewire.conf like this:
+
+![image](https://github.com/user-attachments/assets/cf2da13e-658a-495d-ad02-e3b4d4e064a3)
+
+You need to adjust it to match your soundcard specifications.
+
+This post can help to calculate the right values:
+
+https://www.reddit.com/r/linux_gaming/comments/1gao420/low_latency_guide_for_linux_using_pipewire/
+
+Official docs can be found here:
+
+https://docs.pipewire.org/page_man_pipewire_1.html
+
+Another useful post regarding values:
+
+https://bbs.archlinux.org/viewtopic.php?id=288886
+
+For a more in depth documentation:
+https://wiki.gentoo.org/wiki/PipeWire/en#Configuration_fragments
+
+Once done, proceed to use the config files.
+
 ## How to use:
 
 `git clone` this repo, and place the files on `~/.config/easyeffects` or on `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output/` if using the flatpak version.
