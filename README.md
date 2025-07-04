@@ -12,7 +12,16 @@ This also contains files that can be used when using headphones and regular spea
 IRS files are also provided, to be used with the convolver.
 
 ## Requirements:
-requires easyeffects and pipewire properly configured. be sure that pipewire.conf, client.conf and pipewire-pulse.conf have the right quantum, and match the samplerate that windows uses for your audio card. 
+requires easyeffects and pipewire properly configured. 
+
+On Arch Linux it can be installed with:
+`sudo pacman -S calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 yelp easyeffects`
+
+Refer to your distro package manager to know the equivalent for eg, Linux Mint/Fedora.
+
+Most distros ship pipewire by default, as it's the recommended audio stack nowadays.
+
+Be sure that pipewire.conf, client.conf and pipewire-pulse.conf have the right quantum, and match the samplerate that windows uses for your audio card. 
 
 Boot into windows, and look for the following settings:
 
