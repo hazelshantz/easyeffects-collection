@@ -24,7 +24,7 @@
         "compressor#0": {
             "attack": 130.0,
             "boost-amount": 6.0,
-            "boost-threshold": -60.0,
+            "boost-threshold": -65.0,
             "bypass": false,
             "dry": -100.0,
             "hpf-frequency": 10.0,
@@ -33,7 +33,7 @@
             "knee": -23.9,
             "lpf-frequency": 20000.0,
             "lpf-mode": "off",
-            "makeup": 0.0,
+            "makeup": -3.500000000000002,
             "mode": "Upward",
             "output-gain": 0.0,
             "ratio": 5.0,
