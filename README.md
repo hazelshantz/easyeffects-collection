@@ -37,7 +37,7 @@ So, you may configure pipewire.conf like this:
 ![image](https://github.com/user-attachments/assets/cf2da13e-658a-495d-ad02-e3b4d4e064a3)
 
 You need to adjust it to match your soundcard specifications.
-
+### While on Windows, play some music, and if possible, record the audio output from your laptop speakers with a good mic. This is to have a reference audio, so you can find the right profile that matches the same audio experience.
 # Reference docs:
 
 This post can help to calculate the right values:
