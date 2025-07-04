@@ -11,8 +11,8 @@ This also contains files that can be used when using headphones and regular spea
 
 IRS files are also provided, to be used with the convolver.
 
-## Requirements:
-requires easyeffects and pipewire properly configured. 
+## Linux Requirements:
+Easyeffects and pipewire should be already properly configured. 
 
 On Arch Linux it can be installed with:
 `sudo pacman -S calf lsp-plugins-lv2 zam-plugins-lv2 mda.lv2 yelp easyeffects`
@@ -21,7 +21,9 @@ Refer to your distro package manager to know the equivalent for eg, Linux Mint/F
 
 Most distros ship pipewire by default, as it's the recommended audio stack nowadays.
 
-Be sure that pipewire.conf, client.conf and pipewire-pulse.conf have the right quantum, and match the samplerate that windows uses for your audio card. 
+## Windows Requirements:
+
+### In case you don't have Windows installed, you can use Windows to Go, by creating it with Rufus. If you're dual booting, you can skip this step, and just boot into Windows.
 
 Boot into windows, and look for the following settings:
 
@@ -35,6 +37,8 @@ So, you may configure pipewire.conf like this:
 ![image](https://github.com/user-attachments/assets/cf2da13e-658a-495d-ad02-e3b4d4e064a3)
 
 You need to adjust it to match your soundcard specifications.
+
+# Reference docs:
 
 This post can help to calculate the right values:
 
@@ -52,6 +56,7 @@ For a more in depth documentation:
 https://wiki.gentoo.org/wiki/PipeWire/en#Configuration_fragments
 
 Once done, proceed to use the config files.
+Be sure that pipewire.conf, client.conf and pipewire-pulse.conf have the right quantum, and match the samplerate that windows uses for your audio card. 
 
 ## How to use:
 
